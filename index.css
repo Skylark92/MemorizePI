@@ -1,3 +1,4 @@
+/* 전역 설정 */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -15,6 +16,11 @@ input[type="number"]::-webkit-inner-spin-button {
   clip-path: inset(100%);
 }
 
+h3,
+p {
+  margin: 0;
+}
+
 :root {
   font-size: 10px;
 }
@@ -25,17 +31,19 @@ body {
   height: 100%;
 }
 
-.answer-wrapper {
+/* 앱 설정 */
+/* 입력 구역 설정 */
+.app-wrapper {
   width: 100%;
   padding-top: 20%;
 }
 
-.form-wrapper {
+.app-wrapper .form-wrapper {
   display: flex;
   justify-content: center;
 }
 
-.form-wrapper #answer-input {
+.app-wrapper .form-wrapper #answer-input {
   width: 60%;
   padding-left: 1rem;
   padding-right: 3rem;
@@ -43,9 +51,9 @@ body {
   font-size: 3rem;
 }
 
-.form-wrapper #answer-button {
+.app-wrapper .form-wrapper #answer-button {
   width: 20%;
-  color: #fefefe;
+  color: #deefff;
   background: dodgerblue;
   font-size: 2rem;
   font-weight: bold;
@@ -54,10 +62,35 @@ body {
   cursor: pointer;
 }
 
-.answer-wrapper .answer-notice {
-  margin: 0;
+.app-wrapper .answer-notice {
   padding: 0 10%;
   font-size: 2rem;
   font-weight: bold;
   word-break: break-word;
+}
+
+/* 보여주기 화면 설정 */
+.number-view {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.number-view h3 {
+  box-sizing: border-box;
+  color: #d1ede1;
+  background: teal;
+  text-align: center;
+  font-size: 2rem;
+  height: 5rem;
+  padding-top: 1rem;
+  border: 0.2rem solid black;
+}
+
+.number-view p {
+  display: none;
+  font-size: 1.6rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  padding: 1rem;
+  border: 0.1rem solid black;
 }
