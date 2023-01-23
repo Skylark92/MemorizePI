@@ -1,4 +1,4 @@
-import 검사 from "/src/checkAnswer.js";
+import 검사 from "./checkAnswer.js";
 
 export default function 결과(입력) {
   if (입력 === "") return ["입력해주세요", "dodgerblue"];
